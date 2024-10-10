@@ -1,15 +1,13 @@
-import { Link } from "react-router-dom";
 import OHALogo from "../assets/images/OHALogo.png";
-type NavbarType = {
-  bgImgUrl: string;
-};
-export const NavBar: React.FC<NavbarType> = ({ bgImgUrl })=> {
-  
+import { Link } from "react-router-dom";
+export const NavBar = () => {
   return (
     <>
       {/* Top Div with White Background */}
       <div className='flex justify-between bg-white fixed w-full start-0 top-0 h-20'>
-        <img src={OHALogo} alt="" className="py-5 pl-4" />
+        <Link to='/'>
+          <img src={OHALogo} alt="" className="py-5 pl-4" />
+        </Link>
         <div className="py-6 pr-11 mb-1">
           <button className="bg-red-text w-full text-center text-[18px] text-white py-1 px-2">Contact Us</button>
         </div>
@@ -38,36 +36,36 @@ export const NavBar: React.FC<NavbarType> = ({ bgImgUrl })=> {
               </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                to='program'
                 className="md:text-[20px] xs:text-[14px] text-white hover:text-hover-text"
               >
                 PROGRAM
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                to="\alumni"
                 className="md:text-[20px] xs:text-[14px] text-white hover:text-hover-text"
               >
                 ALUMNI
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                to='/faq'
                 className="md:text-[20px] xs:text-[14px] text-white hover:text-hover-text"
               >
                 FAQ
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                to='/contact'
                 className="md:text-[20px] xs:text-[14px] text-white hover:text-hover-text"
               >
                 CONTACT
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
