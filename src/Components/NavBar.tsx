@@ -6,7 +6,7 @@ export const NavBar = () => {
       <div className='flex justify-between bg-white fixed w-full start-0 top-0 h-16 '>
         <img src={OHALogo} alt="" className="py-5 pl-4"/>
       
-        <button className="bg-red-500 text-wrap">Contact Us</button>
+        <button className="bg-red-500 text-wrap">Contact s</button>
       </div>
       
       {/* Navbar */}
