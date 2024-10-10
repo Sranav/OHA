@@ -1,5 +1,9 @@
 import OHALogo from "../assets/images/OHALogo.png";
-export const NavBar = () => {
+type NavbarType = {
+  bgImgUrl: string;
+};
+export const NavBar: React.FC<NavbarType> = ({ bgImgUrl })=> {
+  
   return (
     <>
       {/* Top Div with White Background */}
