@@ -13,7 +13,9 @@ export default {
       colors: {
         'body-bg': '#D9D9D9',
         'body-text': '#F5F5F5',
-        'yellow-text': '#DEFF00'
+        'yellow-text': '#DEFF00',
+        'red-text':'#BA0A0A',
+        'hover-text':'#FF9D9D'
       },
       screens: {
         'xs': '320px',  // Custom for 320px screens
