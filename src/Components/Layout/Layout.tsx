@@ -27,11 +27,7 @@ const Layout: React.FC<LayoutProps> = ({ children, bannerPath, page = PAGE.HOME 
         }}
       >
         <NavBar bgImgUrl={bannerPath} />
-<<<<<<< HEAD
-        <div className='lg:pt-32 sm:pt-28  mx-auto'>
-=======
         <div className='lg:pt-32 sm:pt-28  '>
->>>>>>> 18314dc7bf17eecd6531839330ae8ab25e27bf43
           {page === PAGE.HOME && <HomeBanner />}
           {page === PAGE.ABOUT && <AboutBanner />}
           {/* {page === PAGE.ABOUT && <AboutBanner/>}

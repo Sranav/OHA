@@ -3,7 +3,7 @@ import Instagram from "../../assets/images/Insta.png";
 import YouTube from "../../assets/images/YouTube.png";
 import FaceBook from "../../assets/images/FaceBook.png";
 
-function HomeBanner() {
+function HomeBannerMobile() {
   return (
     <div className="relative">
       {/* Social media vertical container with lower z-index */}
@@ -87,4 +87,4 @@ function HomeBanner() {
   );
 }
 
-export default HomeBanner;
+export default HomeBannerMobile;
