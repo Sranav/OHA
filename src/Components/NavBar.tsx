@@ -4,7 +4,7 @@ export const NavBar = () => {
   return (
     <>
       {/* Top Div with White Background */}
-      <div className='flex justify-between bg-white fixed w-full start-0 top-0 h-20'>
+      <div className='flex justify-between bg-white fixed w-full start-0 top-0 h-20  z-50'>
         <Link to='/'>
           <img src={OHALogo} alt="" className="py-5 pl-4" />
         </Link>
