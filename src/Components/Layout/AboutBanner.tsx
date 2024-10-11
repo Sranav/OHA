@@ -1,7 +1,7 @@
 function AboutBanner() {
   return (
     <div className="pb-[221px]">
-      <div className="text-[80px] leading-[88px]">
+      {/* <div className="text-[80px] leading-[88px]">
         <div>Ac business</div>
         <div>objectives with <span className="italic font-light text-[#DEFF00]">Mana’o Pili.</span></div>
       </div>
@@ -12,7 +12,7 @@ function AboutBanner() {
         <button className="bg-white text-black tracking-[1.5px] text-[30px] leading-9 py-2 px-4 hover:bg-[#DEFF00] transition duration-300 ease-in-out sm:w-[392px] xs:w-[250px] sm:justify-start xs:justify-center h-[62px] rounded-full">
       GET STARTE
         </button>
-      </div>
+      </div> */}
     
     </div>
   );
