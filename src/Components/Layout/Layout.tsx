@@ -17,7 +17,7 @@ export enum PAGE {
 const Layout: React.FC<LayoutProps> = ({ children, bannerPath, page = PAGE.HOME }) => {
   return (
     <>
-      <div
+      {/* <div
         style={{
           backgroundImage: `url(${bannerPath})`,
           backgroundSize: "cover", // This will ensure the image covers the entire div
@@ -25,15 +25,14 @@ const Layout: React.FC<LayoutProps> = ({ children, bannerPath, page = PAGE.HOME 
           backgroundRepeat: "no-repeat", // Prevent the image from repeating
           
         }}
-      >
-        <NavBar bgImgUrl={bannerPath} />
-        <div className='lg:pt-32 sm:pt-28  '>
-          {page === PAGE.HOME && <HomeBanner />}
-          {page === PAGE.ABOUT && <AboutBanner />}
-          {/* {page === PAGE.ABOUT && <AboutBanner/>}
+      > */}
+      <NavBar  />
+      <div className='lg:pt-28 sm:pt-28  '>
+        {page === PAGE.HOME && <HomeBanner />}
+        {page === PAGE.ABOUT && <AboutBanner />}
+        {/* {page === PAGE.ABOUT && <AboutBanner/>}
           {page === PAGE.NonProfit && <NonProfitBanner/>}
           {page === PAGE.ContactUs && <ContactBanner/>} */}
-        </div>
       </div>
   
       {children}
