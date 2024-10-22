@@ -3,6 +3,7 @@ import AboutBannerImage from "../../assets/images/HomeBanner.png";
 import AboutArena from "../../assets/images/AboutArena.png";
 import OAClasses from "../../assets/images/OAClasses.png";
 import CoFounderOne from "../../assets/images/CoFounderOne.png";
+import CoFounderTwo from "../../assets/images/CoFounderTwo.png";
 
 function AboutBanner() {
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 1024);
@@ -13,7 +14,7 @@ function AboutBanner() {
     };
 
     window.addEventListener("resize", handleResize);
-    
+
     // Cleanup the event listener on component unmount
     return () => {
       window.removeEventListener("resize", handleResize);
@@ -31,9 +32,11 @@ function AboutBanner() {
       }}
     >
       <div className="flex flex-col gap-10 md:pt-[50px] xs:pt-[34px] md:mt-0 xs:mt-32">
-        <div className="flex md:flex-row xs:flex-col justify-center md:gap-36 xs:gap-4">
-          <img src={AboutArena} alt="Great Park Ice Arena" className="max-w-full h-auto md:mx-0 xs:mx-[74px]" />
-          <div>
+        <div className="flex lg:flex-row xs:flex-col lg:gap-32 xs:gap-4">
+          <div className="flex lg:w-1/2 lg:justify-end xs:w-full xs:justify-center">
+            <img src={AboutArena} alt="Great Park Ice Arena" className="object-contain md:mx-0 xs:mx-[74px]" />
+          </div>
+          <div className="flex w-full flex-col lg:items-start xs:items-center">
             <div className="md:text-[32px] xs:text-[20px] text-red-text font-bold leading-normal md:mx-0 xs:mx-12">
               Great Park Ice & FivePoints Arena
             </div>
@@ -45,9 +48,11 @@ function AboutBanner() {
             </ul>
           </div>
         </div>
-        <div className="flex md:flex-row xs:flex-col justify-center md:gap-36 xs:gap-4">
-          <img src={OAClasses} alt="Optimum Academic Classrooms" className="max-w-full h-auto md:pl-12 md:mx-0 xs:mx-[74px]" />
-          <div>
+        <div className="flex lg:flex-row xs:flex-col lg:gap-32 xs:gap-4">
+          <div className="flex lg:w-1/2 lg:justify-end xs:w-full xs:justify-center">
+            <img src={OAClasses} alt="Optimum Academic Classrooms" className="object-contain md:mx-0 xs:mx-[74px]" width={262} />
+          </div>
+          <div className="flex w-full flex-col lg:items-start xs:items-center" >
             <div className="md:text-[32px] xs:text-[20px] text-red-text font-bold leading-normal md:mx-0 xs:mx-12">
               Optimum Academic Classrooms
             </div>
@@ -59,27 +64,57 @@ function AboutBanner() {
             </ul>
           </div>
         </div>
-        <div className="flex md:flex-row xs:flex-col justify-center md:gap-36 xs:gap-4">
-          <img src={CoFounderOne} alt="Alex Kim" className="max-w-full h-auto md:mx-0 xs:mx-[74px]" />
-  
-          <div className="flex md:flex-row xs:flex-col md:gap-10 xs:gap-4">
-            {/* Left side: Alex Kim's name and title */}
-            <div className="flex flex-col">
-              <div className="md:text-[32px] xs:text-[20px] text-red-text font-bold leading-normal md:mx-0 xs:mx-12">
-                Alex Kim
-              </div>
-              <div className="md:text-[16px] xs:text-[14px] text-black font-normal md:mx-0 xs:mx-12">
-                Director of Hockey Operations <br /> Co-Founder
-              </div>
-            </div>
-
-            {/* Right side: List content */}
-            <ul className="list-disc md:text-[20px] xs:text-[12px] text-black font-normal md:mx-0 xs:mx-16">
-              <li>11 year professional hockey in AHL,<br /> ECHL, Europe, and Asia</li>
-              <li>7 years as head coach of Jr Ducks 16U AAA program</li>
-              <li>Advanced to USA Hockey National Tournament in 4 of last 5 years</li>
-            </ul>
+        <div className="flex lg:flex-row xs:flex-col lg:gap-36 xs:gap-4">
+          <div className="flex lg:w-1/2 lg:justify-end xs:w-full xs:justify-center">
+            <img src={CoFounderOne} alt="Alex Kim" className="max-w-full h-auto md:mx-0 xs:mx-[74px]" />
           </div>
+          <div className="flex w-full">
+            <div className="flex w-full lg:flex-row xs:flex-col md:gap-10 xs:gap-4 lg:items-start xs:items-center min-w-[230px]">
+              {/* Left side: Alex Kim's name and title */}
+              <div className="flex flex-col">
+                <div className="md:text-[32px] xs:text-[20px] text-red-text font-bold leading-normal md:mx-0 xs:mx-12">
+                  Alex Kim
+                </div>
+                <div className="md:text-[16px] xs:text-[14px] text-black font-normal md:mx-0 xs:mx-12">
+                  Director of Hockey Operations <br /> Co-Founder
+                </div>
+              </div>
+
+              {/* Right side: List content */}
+              <ul className="list-disc md:text-[20px] xs:text-[12px] text-black font-normal md:mx-0 xs:mx-16">
+                <li>11 year professional hockey in AHL,<br /> ECHL, Europe, and Asia</li>
+                <li>7 years as head coach of Jr Ducks 16U AAA program</li>
+                <li>Advanced to USA Hockey National Tournament in 4 of last 5 years</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <div className="flex lg:flex-row xs:flex-col lg:gap-36 xs:gap-4">
+          <div className="flex lg:w-1/2 lg:justify-end xs:w-full xs:justify-center">
+            <img src={CoFounderTwo} alt="Alex Kim" className="max-w-full h-auto md:mx-0 xs:mx-[74px]" />
+          </div>
+          <div className="flex w-full">
+            <div className="flex w-full lg:flex-row xs:flex-col md:gap-10 xs:gap-4 lg:items-start xs:items-center ">
+              {/* Left side: Alex Kim's name and title */}
+              <div className="flex flex-col">
+                <div className="md:text-[32px] xs:text-[20px] text-red-text font-bold leading-normal md:mx-0 xs:mx-12 lg:min-w-[230px]">
+                Craig Johnson
+                </div>
+                <div className="md:text-[16px] xs:text-[14px] text-black font-normal md:mx-0 xs:mx-12">
+                  Director of Hockey Development <br /> Co-Founder
+                </div>
+              </div>
+
+              {/* Right side: List content */}
+              <ul className="list-disc md:text-[20px] xs:text-[12px] text-black font-normal md:mx-0 xs:mx-16 lg:pr-10">
+                <li>14 year professional hockey in NHL (Anaheim Ducks, Los Angeles Kings, St. Louis Blues, Toronto Maple Leads, Washington Capitals)</li>
+                <li>1994 USA Olympian</li>
+                <li>2023-2024 Anaheim Ducks Assistant Coach</li>
+              </ul>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
