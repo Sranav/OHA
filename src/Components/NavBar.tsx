@@ -17,7 +17,7 @@ export const NavBar = () => {
       <nav className="bg-black fixed w-full z-20 top-[80px] start-0 border-b border-gray-600">
         <div className="flex items-center justify-end mx-auto p-1 md:pr-11 xs:pr-3">
           {/* Nav Links */}
-          <ul className="flex flex-row md:gap-8 xs:gap-6  font-medium">
+          <ul className="flex flex-row md:gap-12 xs:gap-6  font-medium">
             <li>
               <Link
                 to="/about"
