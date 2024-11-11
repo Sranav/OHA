@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        tahoma: ['Tahoma', 'sans-serif'], // Adding Tahoma to the font family list
-        degular: ['degular-display', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'], // Adding Tahoma to the font family list
+        
       },
       colors: {
         'body-bg': '#D9D9D9',
@@ -16,7 +16,8 @@ export default {
         'yellow-text': '#DEFF00',
         'red-text':'#BA0A0A',
         'hover-text':'#FF9D9D',
-        'footer-color':'#353535'
+        'footer-color':'#353535',
+        'gray-text':'#999',
       },
       screens: {
         'xs': '320px',  // Custom for 320px screens

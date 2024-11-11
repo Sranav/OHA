@@ -37,7 +37,7 @@ function HomeBanner() {
           <div className="flex justify-end md:pt-6 xs:pt-[80px] px-9">
             <div className="flex flex-col  text-white w-full md:w-3/4 lg:w-2/3">
               <div className="md:text-[24px] xs:text-[16px] font-bold leading-normal">WELCOME TO OPTIMUM HOCKEY ACADEMY</div>
-              <div className="md:text-[64px] xs:text-[36px] text-red-text pt-5" style={{ WebkitTextStrokeWidth: "1px", WebkitTextStrokeColor: "#907E7E" }}>
+              <div className=" text-[36px] text-red-text pt-5 font-bold" style={{ WebkitTextStrokeWidth: "1px", WebkitTextStrokeColor: "#907E7E" }}>
                 Your Next Step of Hockey <br /> Development
               </div>
               <div className="border border-red-text mt-4 mb-4 w-[50%] md:mx-auto"></div>
