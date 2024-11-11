@@ -6,10 +6,10 @@ export const NavBar = () => {
       {/* Top Div with White Background */}
       <div className='flex justify-between bg-white fixed w-full start-0 top-0 h-20  z-50'>
         <Link to='/'>
-          <img src={OHALogo} alt="" className="py-5 pl-4" />
+          <img src={OHALogo} alt="" className="py-6 pl-4" />
         </Link>
         <div className="py-6 md:pr-11 xs:pr-6 mb-1">
-          <button className="bg-red-text w-full text-center text-[18px] text-white py-1 px-2">Contact Us</button>
+          <button className="bg-red-text w-full text-center lg:text-[18px] xs:text-[10px] text-white py-1 px-2">Contact Us</button>
         </div>
       </div>
 
@@ -37,7 +37,7 @@ export const NavBar = () => {
             </li>
             <li>
               <Link
-                to='program'
+                to='/program'
                 className="md:text-[20px] xs:text-[10px] text-white hover:text-hover-text"
               >
                 PROGRAM

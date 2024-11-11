@@ -1,6 +1,7 @@
 import { NavBar } from "../NavBar";
 import AboutBanner from "./AboutBanner";
 import HomeBanner from "./HomeBanner";
+import ProgramBanner from "./ProgramBanner";
 
 interface LayoutProps {
     children: React.ReactNode;
@@ -11,7 +12,7 @@ export enum PAGE {
     HOME = "home",
     SERVICE = "service",
     ABOUT = "about",
-    NonProfit = "nonprofit",
+    Program = "program",
     ContactUs = "contactus",
 }
 const Layout: React.FC<LayoutProps> = ({ children, bannerPath, page = PAGE.HOME }) => {
@@ -30,6 +31,7 @@ const Layout: React.FC<LayoutProps> = ({ children, bannerPath, page = PAGE.HOME 
       <div className='lg:pt-28 sm:pt-28  '>
         {page === PAGE.HOME && <HomeBanner />}
         {page === PAGE.ABOUT && <AboutBanner />}
+        {page === PAGE.Program && <ProgramBanner />}
         {/* {page === PAGE.ABOUT && <AboutBanner/>}
           {page === PAGE.NonProfit && <NonProfitBanner/>}
           {page === PAGE.ContactUs && <ContactBanner/>} */}
