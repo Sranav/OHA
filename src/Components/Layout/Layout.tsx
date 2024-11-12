@@ -1,5 +1,6 @@
 import { NavBar } from "../NavBar";
 import AboutBanner from "./AboutBanner";
+import AluminiBanners from "./AluminiBanners";
 import HomeBanner from "./HomeBanner";
 import ProgramBanner from "./ProgramBanner";
 
@@ -14,6 +15,7 @@ export enum PAGE {
     ABOUT = "about",
     Program = "program",
     ContactUs = "contactus",
+    Alumini ="alumini",
 }
 const Layout: React.FC<LayoutProps> = ({ children, bannerPath, page = PAGE.HOME }) => {
   return (
@@ -32,6 +34,7 @@ const Layout: React.FC<LayoutProps> = ({ children, bannerPath, page = PAGE.HOME 
         {page === PAGE.HOME && <HomeBanner />}
         {page === PAGE.ABOUT && <AboutBanner />}
         {page === PAGE.Program && <ProgramBanner />}
+        {page === PAGE.Alumini && <AluminiBanners />}
         {/* {page === PAGE.ABOUT && <AboutBanner/>}
           {page === PAGE.NonProfit && <NonProfitBanner/>}
           {page === PAGE.ContactUs && <ContactBanner/>} */}

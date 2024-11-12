@@ -45,7 +45,7 @@ export const NavBar = () => {
             </li>
             <li>
               <Link
-                to="\alumni"
+                to="/alumni"
                 className="md:text-[20px] xs:text-[10px] text-white hover:text-hover-text"
               >
                 ALUMNI

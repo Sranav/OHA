@@ -90,7 +90,7 @@ function ProgramBanner() {
               </a>
             </div>
       
-            <div className="flex flex-col gap-10 md:pt-[50px] xs:pt-[34px] md:mt-0 xs:mt-32">
+            <div className="flex flex-col gap-10  md:mt-0 xs:mt-32">
               <div className="flex lg:flex-row xs:flex-col lg:gap-36 xs:gap-4 justify-between pr-[50px]">
                 <div className="flex flex-col pl-[50px] lg:w-auto xs:w-full overflow-hidden gap-5 ">
                   <img
