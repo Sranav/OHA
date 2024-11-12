@@ -75,7 +75,7 @@ const FAQComponent: React.FC = () => {
   ];
 
   return (
-    <div className="flex max-w-[895px]">
+    <div className="flex min-w-[895px]">
       <div className="w-full">
         <ul className="shadow-box">
           {faqData.map((faq, index) => (
@@ -105,7 +105,7 @@ const FAQComponent: React.FC = () => {
                     <div>
                       {/* Subheading with black background */}
                       <div className="bg-[#545454] text-white py-4 text-center">
-                        <h2 className="text-[24px] font-normal">SAMPLE SCHOOL SCHEDULE</h2>
+                        <div className="text-[24px] font-normal">SAMPLE SCHOOL SCHEDULE</div>
                       </div>
 
                       {/* Background image and content */}
