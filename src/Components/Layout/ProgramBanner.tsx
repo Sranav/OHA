@@ -124,13 +124,13 @@ function ProgramBanner() {
                     src={Program4}
                     alt="Great Park Ice Arena"
                     className=" md:mx-0 xs:mx-[74px] "
-                    style={{ width: "300px", height: "auto" }} // Fixed size for Program1
+                     // Fixed size for Program1
                   />
                    <img
                     src={Program5}
                     alt="Great Park Ice Arena"
                     className=" md:mx-0 xs:mx-[74px] "
-                    style={{ width: "300px", height: "auto" }} // Fixed size for Program1
+                     // Fixed size for Program1
                   />
                  
                 </div>
