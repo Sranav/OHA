@@ -3,12 +3,12 @@ import Instagram from "../../assets/images/Insta.png";
 import YouTube from "../../assets/images/YouTube.png";
 import FaceBook from "../../assets/images/FaceBook.png";
 import HomeBannerTest from "../../assets/images/HomeBanner.png";
-import MobileHomeBanner from "../../assets/images/MobileHomeBanner.png";
+import MobileHomeBanner1 from "../../assets/images/MobileHomeBanner1.png";
 import useWindowSize from "../../hooks/useWindowSize";
 
 function HomeBanner() {
   const { width } = useWindowSize();
-  const bannerImage = width < 1024 ? MobileHomeBanner : HomeBannerTest;
+  const bannerImage = width < 1024 ? MobileHomeBanner1 : HomeBannerTest;
   return (
     <div
       className="relative min-h-screen  md:pt-7 xs:pt-[90px]"  // Set min-height to full screen
@@ -36,11 +36,11 @@ function HomeBanner() {
 
           <div className="flex justify-end md:pt-6 xs:pt-[80px] px-9">
             <div className="flex flex-col  text-white w-full md:w-3/4 lg:w-2/3">
-              <div className="md:text-[24px] xs:text-[16px] font-bold leading-normal">WELCOME TO OPTIMUM HOCKEY ACADEMY</div>
-              <div className=" text-[36px] text-red-text pt-5 font-bold" style={{ WebkitTextStrokeWidth: "1px", WebkitTextStrokeColor: "#907E7E" }}>
+              <div className="md:text-[24px] xs:text-[16px] font-bold leading-normal">WELCOME TO <br />OPTIMUM HOCKEY  ACADEMY</div>
+              <div className=" text-[36px] text-red-text pt-5 font-bold leading-normal" >
                 Your Next Step of Hockey <br /> Development
               </div>
-              <div className="border border-red-text mt-4 mb-4 w-[50%] md:mx-auto"></div>
+              <div className="border border-red-text mt-4 mb-4 w-[272px] md:mx-auto"></div>
               {/* <div className="text-black text-[24px] pt-8">
                 California’s premiere full-time hockey academy focused on player development and student athlete success.
               </div> */}

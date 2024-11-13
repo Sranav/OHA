@@ -1,14 +1,23 @@
-import HomeCircle from "../../assets/images/HomeCircle.png";
 import Instagram from "../../assets/images/Insta.png";
 import YouTube from "../../assets/images/YouTube.png";
 import FaceBook from "../../assets/images/FaceBook.png";
 import HomeBannerTest from "../../assets/images/HomeBanner.png";
 import MobileHomeBanner from "../../assets/images/MobileHomeBanner.png";
 import useWindowSize from "../../hooks/useWindowSize";
-import AluminImage1 from "../../assets/images/aluminImage.png";
 import { useState, useEffect } from "react";
 import RightArrow from '../../assets/images/rightArrow.png';
 import LeftArrow from '../../assets/images/leftArrow.png';
+import TannerHenricks from "../../assets/images/TannerHenricks.png";
+import TyHenricks from "../../assets/images/TyHenricks.png";
+import TylerMcGowan from "../../assets/images/TylerMcGowan.png";
+import CK from "../../assets/images/CK.png";
+import ColinFrank from "../../assets/images/ColinFrank.png";
+import MilesRoberts from "../../assets/images/MilesRoberts.png";
+import MerrilSteenari from "../../assets/images/MerrilSteenari.png";
+import JamesHong from "../../assets/images/JamesHong.png";
+import JonasKemps from "../../assets/images/JonasKemps.png";
+import ZaneTorre from "../../assets/images/ZaneTorre.png";
+import Odin from "../../assets/images/Odin.png";
 function AluminiBanners() {
     const { width } = useWindowSize();
     const bannerImage = width < 1024 ? MobileHomeBanner : HomeBannerTest;
@@ -29,30 +38,145 @@ function AluminiBanners() {
 
     const slides = [
         {
-            img: AluminImage1,
+            img: TannerHenricks,
             title: "Tanner Henricks",
-            subcontent: "Defence, OHA 2023",
+            subtitle: "Defence",
+            subyear:"OHA 2023",
             description: [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                "Curabitur pretium tincidunt lacus.",
-                "Pellentesque convallis ligula eget ante.",
+                "NHL - Columbus Blue Jackets 2024 Draft Pick (Round 4, #101 overall)",
+                "NCAA - St Cloud State University",
+                "NCDC - Utah Outliers 2023 Entry Draft Pick (Round 8, #145 overall)",
+                "USHL - Lincoln Stars 2022 USHL Futures Draft Pick (Round 6, #86 overall)"
             ],
         },
         {
-            img: AluminImage1,
-            title: "Scelerisque eleifend donec pretium vulputate sapien.",
+            img: TyHenricks,
+            title: "Ty Henricks",
+            subtitle: "Left Wing",
+            subyear:"OHA 2022",
             description: [
-                "Egestas diam in arcu cursus euismod quis.",
-                "Fusce id velit ut tortor.",
-                "Donec pretium vulputate sapien.",
+                "NHL - New York Rangers 2023 Draft Pick (Round 6, #183 overall)",
+                "NCAA - Western Michigan University",
+                "USHL - Muskegon Lumberjacks",
+                "USHL - Fargo Force",
+                "USHL - Youngstown Phantoms 2021 Draft Pick (Round 7, #91 overall)",
+                "WHL - Brandon Wheat Kings 2020 US Prospect Draft Pick (Round 2, #28 overall)"
             ],
         },
         {
-            img: AluminImage1,
-            title: "Consectetur purus ut faucibus pulvinar elementum.",
+            img: TylerMcGowan,
+            title: "Tyler McGowan",
+            subtitle: "Defense",
+            subyear:"OHA 2023",
             description: [
-                "Aliquam ultrices sagittis orci a scelerisque purus semper.",
-                "Pellentesque habitant morbi tristique senectus et netus.",
+                "NAHL - Fairbanks Ice Dogs",
+                "NAHL - Janesville Jets",
+                "NCDC - Utah Outliers 2023 Entry Draft Pick (Round 9, #163 overall)",
+                "USHL - Muskegon Lumberjacks 2022 Draft Pick (Round 5, #70 overall)",
+                "WHL - Victoria Royals 2021 US Prospect Draft Pick (Round 2, #36 overall) ",
+                
+            ],
+        },
+        {
+            img: CK,
+            title: "Christian Kim",
+            subtitle: "Forward",
+            subyear:"OHA 2022",
+            description: [
+                "BCHL - Trail Smoke Eaters",
+                "BCHL - Wenatchee Wild",
+                "NCDC - New Jersey Rockets 2022 Entry Draft Pick (Round 17, #227 overall)",
+                "USHL - Tri City Storm 2021 USHL Futures Draft Pick (Round 4, #52 overall)",
+                "WHL - Vancouver Giants 2020 Bantam Draft Pick (Round 7, #135 overall)",
+                
+            ],
+        },
+        {
+            img: ColinFrank,
+            title: "Colin Frank",
+            subtitle: "Forward",
+            subyear:"OHA 2023",
+            description: [
+                "NCAA - University of Connecticut",
+                "NCDC - Rock Springs Propsectors 2023 Draft Pick (ROund 11, #195 overall)",
+                "USHL - Dubuque Fighting Saints 2022 Draft Pick (Round 2, #27 overall)",
+                "WHL - Brandon Wheat Kings 2021 US Prospect Draft Pick (Round 1, # 13 overall)",
+               
+                
+            ],
+        },
+        {
+            img: MilesRoberts,
+            title: "Miles Roberts",
+            subtitle: "Goalie",
+            subyear:"OHA 2022",
+            description: [
+                "BCHL - Cranbook Bucks",
+                "USHL - Muskegon Lumberjacks",
+                "NAHL - Danbury Jr Hat Tricks",
+                "USHL - Chicago Steel 2021 Draft Pick (Round 5, #40 overall)",
+                "WHL - Everett Silvertips 2020 US Prospect Draft Pick  (Round 1, #4 overall)",
+                "NTDP - NTDP Evaluation Camp Invitee"              
+               
+            ],
+        },
+        {
+            img: MerrilSteenari,
+            title: "Merril Steenari",
+            subtitle: "Forward",
+            subyear:"OHA 2021",
+            description: [
+                "USHL - Fargo Force",
+                "NAHL - Janesville Jets",
+                "NAHL - St Cloud Norsemen 2021 Draft (Round 2, #54 overall)",
+                "USHL - Sioux Falls Stampede 2020 Futures Draft Pick (Round 7, #97 overall) ",                         
+                
+            ],
+        },
+        {
+            img: JamesHong,
+            title: "James Hong",
+            subtitle: "Forward",
+            subyear:"OHA 2021",
+            description: [
+                "NCAA - Ohio State University",
+                "USHL - Madison Capitals “A”",
+                "NAHL - Chippewa Steel 2021 Draft Pick (Round 9, #245 overall)",
+                "USHL - Waterloo Blackhawks 2020 Futures Draft Pick (Round 3, #43 overall) ",                         
+                "WHL - Everett Silvertips 2019 Draft Pick (Round 5, #108 overall) "
+            ],
+        },
+        {
+            img: JonasKemps,
+            title: "Jonas Kemps",
+            subtitle: "Defense",
+            subyear:"OHA 2024",
+            description: [
+                "NCAA - Michigan State University",
+                "NTDP - US National U17 Team",               
+            ],
+        },
+        {
+            img: ZaneTorre,
+            title: "Zane Torre",
+            subtitle: "Forward",
+            subyear:"OHA 2021",
+            description: [
+                "USHL - Dubuque Fighting Saints USHL Futures Draft (Round 2, #29 overall) ",
+                "WHL - Seattle Thunderbirds WHL US Prospect Draft (Round 2, #43 overall)", 
+                "USA-S16 - USA Hockey Boys 16 Player Development Camp - Team Black",
+                "USA-S15 - USA Hockey Boys 15 Player Development Camp - Team Navy"              
+            ],
+        },
+        {
+            img: Odin,
+            title: "Odin Vauhkonen",
+            subtitle: "Defense",
+            subyear:"OHA 2022",
+            description: [
+                "USHL - Youngstown Phantoms USHL Futures Draft (Round 7, #101 overall) ",
+                "WHL - Victoria Royals WHL US Prospect Draft (Round 2, #25 overall)", 
+                            
             ],
         },
     ];
@@ -94,20 +218,23 @@ function AluminiBanners() {
                             <div className="flex justify-center py-5">
                                 <div className="w-96 relative">
                                     <div className="w-full">
-                                        <div className="w-96 bg-white rounded-lg shadow-lg transition-all duration-300">
-                                            <img className="rounded-t-lg w-96 h-64" src={slides[activeSlide].img} alt="Slide" />
+                                        <div className=" flex transition-all duration-300 justify-center">
+                                            <img className=" w-[140px] h-[140px]" src={slides[activeSlide].img} alt="Slide" />
                                            
                                         </div>
                                         <div className="py-4 px-8 flex flex-col bg-[#D9D9D9] border border-[#737373] mt-[36px]">
-                                                <h1 className="text-gray-900 font-bold text-2xl tracking-tight">
+                                                <h1 className="text-red-text text-[32px] font-bold leading-normal">
                                                     {slides[activeSlide].title}
                                                 </h1>
-                                                <div className="text-black">
-                                                    {slides[activeSlide].subcontent}
+                                                <div className="text-black text-[16px] font-normal leading-normal">
+                                                    {slides[activeSlide].subtitle}
                                                 </div>
-                                                <ul className="py-3 text-gray-600 leading-6 list-disc">
+                                                <div className="text-black text-[16px] font-bold leading-normal">
+                                                    {slides[activeSlide].subyear}
+                                                </div>
+                                                <ul className="py-3 text-black text-[20px] font-normal leading-normal list-disc">
                                                     {slides[activeSlide].description.map((item, index) => (
-                                                        <li key={index} className="mb-2">{item}</li>
+                                                        <li key={index} className="">{item}</li>
                                                     ))}
                                                 </ul>
                                             </div>
@@ -123,13 +250,13 @@ function AluminiBanners() {
                             className="text-red-600 cursor-pointer flex items-center gap-2"
                         >
                             <img src={LeftArrow} alt="Previous" className="w-6 h-6" /> {/* Adjust icon size */}
-                            <div>Prev</div>
+                            <div className="text-black text-[11px] font-normal leading-normal uppercase">Prev</div>
                         </button>
                         <button
                             onClick={handleNextSlide}
                             className="text-red-600 cursor-pointer  flex items-center gap-2"
                         >
-                            <div>Next</div>
+                            <div className="text-black text-[11px] font-normal leading-normal uppercase">Next</div>
                             <img src={RightArrow} alt="Next" className="w-6 h-6" /> {/* Adjust icon size */}
                         </button>
                     </div>
@@ -158,19 +285,19 @@ function AluminiBanners() {
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-col gap-10 pt-8">
-                        <div className="flex  justify-center gap-5">
-                            <div className="flex ">
-                                <img src={AluminImage1} alt="" className="w-[200px]" />
+                    <div className="flex flex-col gap-10 pt-8 ml-[204px] mr-[37px] ">
+                        <div className="flex gap-5">
+                            <div className="flex w-[138px] h-[140px]">
+                                <img src={TannerHenricks} alt="" className=" " />
                             </div>
-                            <div className="flex flex-row border border-[#737373] bg-[#E8E4E4] gap-6  w-3/4">
+                            <div className="flex flex-row border border-[#737373] bg-[#E8E4E4] gap-6 w-full  ">
                                 <div className="flex flex-col pt-9 p-4">
                                     <div className="text-[32px] text-red-text font-bold leading-normal">Tanner Henricks</div>
                                     <div className="text-black text-[16px] font-normal leading-normal">Defense</div>
                                     <div className="text-black text-[16px] font-bold leading-normal">OHA 2023</div>
                                 </div>
                                 <div className="flex flex-col pt-6 p-4">
-                                    <ul className="list-disc pl-5 list-outside space-y-2">
+                                    <ul className="list-disc pl-5 list-outside ">
                                         <li className="text-[20px] text-black leading-normal font-normal">NHL - Columbus Blue Jackets 2024 Draft Pick (Round 4, #101 overall)</li>
                                         <li className="text-[20px] text-black leading-normal font-normal">NCAA - St Cloud State University</li>
                                         <li className="text-[20px] text-black leading-normal font-normal">NCDC - Utah Outliers 2023 Entry Draft Pick (Round 8, #145 overall)</li>
@@ -179,40 +306,40 @@ function AluminiBanners() {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex  justify-center gap-5">
+                        <div className="flex  gap-5">
                             <div className="flex ">
-                                <img src={AluminImage1} alt="" className="w-[200px]" />
+                                <img src={TyHenricks} alt="" className="h-[140px]" />
                             </div>
-                            <div className="flex flex-row border border-[#737373] bg-[#E8E4E4] gap-6  w-3/4">
+                            <div className="flex flex-row border border-[#737373] bg-[#E8E4E4] gap-6 w-full ">
                                 <div className="flex flex-col pt-9 p-4">
                                     <div className="text-[32px] text-red-text font-bold leading-normal">Ty Henricks</div>
                                     <div className="text-black text-[16px] font-normal leading-normal">Left Wing</div>
                                     <div className="text-black text-[16px] font-bold leading-normal">OHA 2022</div>
                                 </div>
-                                <div className="flex flex-col pt-6 p-4">
-                                    <ul className="list-disc pl-5 list-outside space-y-2">
+                                <div className="flex flex-col pt-6 ml-[80px]">
+                                    <ul className="list-disc pl-5 list-outside">
                                         <li className="text-[20px] text-black leading-normal font-normal">NHL - New York Rangers 2023 Draft Pick (Round 6, #183 overall)</li>
                                         <li className="text-[20px] text-black leading-normal font-normal">NCAA - Western Michigan University</li>
                                         <li className="text-[20px] text-black leading-normal font-normal">USHL - Muskegon Lumberjacks</li>
                                         <li className="text-[20px] text-black leading-normal font-normal">USHL - Fargo Force</li>
                                         <li className="text-[20px] text-black leading-normal font-normal">USHL - Youngstown Phantoms 2021 Draft Pick (Round 7, #91 overall)</li>
-                                        <li className="text-[20px] text-black leading-normal font-normal">WHL - Brandon Wheat Kings 2020 US Prospect Draft Pick (Round 2, #28 overall)</li>
+                                        <li className="text-[20px] text-black leading-normal font-normal">WHL - Brandon Wheat Kings 2020 US Prospect Draft Pick (Round 2, #28 <br />overall)</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div className="flex  justify-center gap-5">
                             <div className="flex ">
-                                <img src={AluminImage1} alt="" className="w-[200px]" />
+                                <img src={TylerMcGowan} alt="" className="h-[140px]" />
                             </div>
-                            <div className="flex flex-row border border-[#737373] bg-[#E8E4E4] gap-6  w-3/4">
+                            <div className="flex flex-row border border-[#737373] bg-[#E8E4E4] gap-6  w-full">
                                 <div className="flex flex-col pt-9 p-4">
                                     <div className="text-[32px] text-red-text font-bold leading-normal">Tyler McGowan</div>
                                     <div className="text-black text-[16px] font-normal leading-normal">Defense</div>
                                     <div className="text-black text-[16px] font-bold leading-normal">OHA 2023</div>
                                 </div>
                                 <div className="flex flex-col pt-6 p-4">
-                                    <ul className="list-disc pl-5 list-outside space-y-2">
+                                    <ul className="list-disc pl-5 list-outside ">
                                         <li className="text-[20px] text-black leading-normal font-normal">NAHL - Fairbanks Ice Dogs</li>
                                         <li className="text-[20px] text-black leading-normal font-normal">NAHL - Janesville Jets</li>
                                         <li className="text-[20px] text-black leading-normal font-normal">NCDC - Utah Outliers 2023 Entry Draft Pick (Round 9, #163 overall)</li>
@@ -225,16 +352,16 @@ function AluminiBanners() {
                         </div>
                         <div className="flex  justify-center gap-5 pb-5">
                             <div className="flex ">
-                                <img src={AluminImage1} alt="" className="w-[200px]" />
+                                <img src={CK} alt="" className="h-[70px] w-[132px]" />
                             </div>
-                            <div className="flex flex-row border border-[#737373] bg-[#E8E4E4] gap-6  w-3/4">
+                            <div className="flex flex-row border border-[#737373] bg-[#E8E4E4] gap-6  w-full">
                                 <div className="flex flex-col pt-9 p-4">
                                     <div className="text-[32px] text-red-text font-bold leading-normal">Christian Kim</div>
                                     <div className="text-black text-[16px] font-normal leading-normal">Forward</div>
                                     <div className="text-black text-[16px] font-bold leading-normal">OHA 2022</div>
                                 </div>
-                                <div className="flex flex-col pt-6 p-4">
-                                    <ul className="list-disc pl-5 list-outside space-y-2">
+                                <div className="flex flex-col pt-6 p-4 ml-10">
+                                    <ul className="list-disc pl-5 list-outside ">
                                         <li className="text-[20px] text-black leading-normal font-normal">BCHL - Trail Smoke Eaters</li>
                                         <li className="text-[20px] text-black leading-normal font-normal">BCHL - Wenatchee Wild</li>
                                         <li className="text-[20px] text-black leading-normal font-normal">NCDC - New Jersey Rockets 2022 Entry Draft Pick (Round 17, #227 overall)</li>

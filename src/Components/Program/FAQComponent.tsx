@@ -75,7 +75,7 @@ const FAQComponent: React.FC = () => {
   ];
 
   return (
-    <div className="flex min-w-[895px]">
+    <div className="flex xl:min-w-[895px]">
       <div className="w-full">
         <ul className="shadow-box">
           {faqData.map((faq, index) => (
