@@ -13,7 +13,7 @@ function InstaLivePhoto() {
   useEffect(() => {
     const fetchMedia = async () => {
       try {
-        const response = await fetch("https://insta-app-latest.onrender.com/api/media");
+        const response = await fetch("https://insta-app1-latest.onrender.com/api/media");
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }

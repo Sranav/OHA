@@ -79,13 +79,13 @@ const FAQComponent: React.FC = () => {
       <div className="w-full">
         <ul className="shadow-box">
           {faqData.map((faq, index) => (
-            <li key={index} className="relative border border-[#727272] bg-[#E8E4E4] mb-[22px]">
+            <li key={index} className="relative border border-[#727272] bg-[#E8E4E4] mb-[26px]">
               <button
                 type="button"
                 className="w-full py-6 text-left flex items-center justify-between"
                 onClick={() => toggle(index)}
               >
-                <span className="text-[24px] leading-normal text-gray-text font-normal pl-8">
+                <span className="text-[24px] leading-[1.2] text-gray-text font-normal pl-8">
                   {faq.question === "Sample Schedule" ? "SAMPLE SCHOOL SCHEDULE" : faq.question}
                 </span>
                 <img
@@ -105,7 +105,7 @@ const FAQComponent: React.FC = () => {
                     <div>
                       {/* Subheading with black background */}
                       <div className="bg-[#545454] text-white py-4 text-center">
-                        <div className="text-[24px] font-normal">SAMPLE SCHOOL SCHEDULE</div>
+                        <div className="text-[24px] font-normal leading-[1.2]">SAMPLE SCHOOL SCHEDULE</div>
                       </div>
 
                       {/* Background image and content */}
@@ -115,7 +115,7 @@ const FAQComponent: React.FC = () => {
                           background: `url(${sheduleImage}) lightgray -426.018px 0px / 160.131% 100% no-repeat`,
                         }}
                       >
-                        <div className="font-normal text-[24px] text-black leading-normal">
+                        <div className="font-normal text-[24px] text-black lleading-[1.2]">
                           {/* Add Event and Time headers */}
                           <div className="flex justify-between mb-4">
                             <div className="font-bold text-[24px]">Event</div>
@@ -125,10 +125,10 @@ const FAQComponent: React.FC = () => {
                           {faq.links.map((linkItem, linkIndex) => (
                             <div key={linkIndex} className="flex justify-between items-center mb-4">
                               <div>
-                                <div className="text-[24px] leading-normal font-normal">{linkItem.name}</div>
+                                <div className="text-[24px] leading-[1.2] font-normal">{linkItem.name}</div>
                                 {/* If subContent exists, display it */}
                                 {linkItem.subContent && (
-                                  <div className="text-[24px] leading-normal font-normal text-black mt-2 pl-8">
+                                  <div className="text-[24px] leading-[1.2] font-normal text-black mt-2 pl-8">
                                     {linkItem.subContent.map((content, contentIndex) => (
                                       <p key={contentIndex}>{content}</p>
                                     ))}
@@ -146,14 +146,14 @@ const FAQComponent: React.FC = () => {
                       </div>
                     </div>
                   ) : (
-                    <ul className="space-y-4 list-disc pl-8">
+                    <ul className=" list-disc pl-8">
                       {faq.links.map((linkItem, linkIndex) => (
-                        <li key={linkIndex} className="text-[24px] leading-normal font-normal text-black">
+                        <li key={linkIndex} className="text-[24px] leading-[1.2] font-normal text-black">
                           {linkItem.name}
                           {linkItem.subLinks && (
                             <ul className="ml-6 list-disc pl-6">
                               {linkItem.subLinks.map((subLink, subLinkIndex) => (
-                                <li key={subLinkIndex} className="text-[24px] leading-normal font-normal text-black">
+                                <li key={subLinkIndex} className="text-[24px] leading-[1.2] font-normal text-black">
                                   {subLink}
                                 </li>
                               ))}

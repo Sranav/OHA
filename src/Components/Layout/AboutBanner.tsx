@@ -37,10 +37,10 @@ function AboutBanner() {
             <img src={AboutArena} alt="Great Park Ice Arena" className="object-contain md:mx-0 xs:mx-[74px]" />
           </div>
           <div className="flex w-full flex-col lg:items-start xs:items-center">
-            <div className="md:text-[32px] xs:text-[20px] text-red-text font-bold leading-normal md:mx-0 xs:mx-12">
+            <div className="md:text-[32px] xs:text-[20px] text-red-text font-bold leading-[1.2] md:mx-0 xs:mx-12">
               Great Park Ice & FivePoints Arena
             </div>
-            <ul className="list-disc md:text-[24px] xs:text-[14px] pl-10 text-black font-normal md:mx-0 xs:mx-12">
+            <ul className="list-disc md:text-[24px] xs:text-[14px] pl-10 text-black font-normal md:mx-0 xs:mx-12 leading-[1.2]">
               <li>4 rinks (3 NHL, 1 Olympic)</li>
               <li>2,500 seat arena</li>
               <li>Anaheim Ducks Practice Facility</li>
@@ -53,10 +53,10 @@ function AboutBanner() {
             <img src={OAClasses} alt="Optimum Academic Classrooms" className="object-contain md:mx-0 xs:mx-[74px]" width={262} />
           </div>
           <div className="flex w-full flex-col lg:items-start xs:items-center" >
-            <div className="md:text-[32px] xs:text-[20px] text-red-text font-bold leading-normal md:mx-0 xs:mx-12">
+            <div className="md:text-[32px] xs:text-[20px] text-red-text font-bold leading-[1.2] md:mx-0 xs:mx-12 ">
               Optimum Academic Classrooms
             </div>
-            <ul className="list-disc md:text-[24px] xs:text-[14px] pl-10 text-black font-normal md:mx-0 xs:mx-12">
+            <ul className="list-disc md:text-[24px] xs:text-[14px] pl-10 text-black font-normal md:mx-0 xs:mx-12 leading-[1.2] pt-6">
               <li>3 onsite classrooms at Great Park Ice</li>
               <li>Small group academics</li>
               <li>Classes instructed by onsite California Accredited <br /> Teachers</li>
@@ -72,16 +72,16 @@ function AboutBanner() {
             <div className="flex w-full lg:flex-row xs:flex-col md:gap-10 xs:gap-4 lg:items-start xs:items-center min-w-[230px]">
               {/* Left side: Alex Kim's name and title */}
               <div className="flex flex-col">
-                <div className="md:text-[32px] xs:text-[20px] text-red-text font-bold leading-normal md:mx-0 xs:mx-12">
+                <div className="md:text-[32px] xs:text-[20px] text-red-text font-bold leading-[1.2] md:mx-0 xs:mx-12">
                   Alex Kim
                 </div>
-                <div className="md:text-[16px] xs:text-[14px] text-black font-normal md:mx-0 xs:mx-12">
+                <div className="md:text-[16px] xs:text-[14px] text-black font-normal md:mx-0 xs:mx-12 leading-[1.2]">
                   Director of Hockey Operations <br /> Co-Founder
                 </div>
               </div>
 
               {/* Right side: List content */}
-              <ul className="list-disc md:text-[20px] xs:text-[12px] text-black font-normal md:mx-0 xs:mx-16">
+              <ul className="list-disc md:text-[20px] xs:text-[12px] text-black font-normal md:mx-0 xs:mx-16 leading-[1.2]">
                 <li>11 year professional hockey in AHL,<br /> ECHL, Europe, and Asia</li>
                 <li>7 years as head coach of Jr Ducks 16U AAA program</li>
                 <li>Advanced to USA Hockey National Tournament in 4 of last 5 years</li>
@@ -98,16 +98,16 @@ function AboutBanner() {
             <div className="flex w-full lg:flex-row xs:flex-col md:gap-10 xs:gap-4 lg:items-start xs:items-center ">
               {/* Left side: Alex Kim's name and title */}
               <div className="flex flex-col">
-                <div className="md:text-[32px] xs:text-[20px] text-red-text font-bold leading-normal md:mx-0 xs:mx-12 lg:min-w-[230px]">
+                <div className="md:text-[32px] xs:text-[20px] text-red-text font-bold leading-[1.2] md:mx-0 xs:mx-12 lg:min-w-[230px] ">
                 Craig Johnson
                 </div>
-                <div className="md:text-[16px] xs:text-[14px] text-black font-normal md:mx-0 xs:mx-12">
+                <div className="md:text-[16px] xs:text-[14px] text-black font-normal md:mx-0 xs:mx-12 leading-[1.2]">
                   Director of Hockey Development <br /> Co-Founder
                 </div>
               </div>
 
               {/* Right side: List content */}
-              <ul className="list-disc md:text-[20px] xs:text-[12px] text-black font-normal md:mx-0 xs:mx-16 lg:pr-10">
+              <ul className="list-disc md:text-[20px] xs:text-[12px] text-black font-normal md:mx-0 xs:mx-16 lg:pr-10 leading-[1.2]">
                 <li>14 year professional hockey in NHL (Anaheim Ducks, Los Angeles Kings, St. Louis Blues, Toronto Maple Leads, Washington Capitals)</li>
                 <li>1994 USA Olympian</li>
                 <li>2023-2024 Anaheim Ducks Assistant Coach</li>
