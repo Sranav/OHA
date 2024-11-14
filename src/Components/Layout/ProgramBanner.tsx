@@ -120,19 +120,20 @@ function ProgramBanner() {
                     className=" md:mx-0 xs:mx-[74px]"
                     style={{ width: "300px", height: "auto" }} // Fixed size for Program1
                   />
+                  <div className=" flex gap-20">
                    <img
                     src={Program4}
                     alt="Great Park Ice Arena"
-                    className=" md:mx-0 xs:mx-[74px] "
+                    className=" md:mx-0 xs:mx-[74px] max-w-[407px] max-h-[271px] "
                      // Fixed size for Program1
                   />
                    <img
                     src={Program5}
                     alt="Great Park Ice Arena"
-                    className=" md:mx-0 xs:mx-[74px] "
+                    className=" md:mx-0 xs:mx-[74px] max-w-[370px] max-h-[271px]"
                      // Fixed size for Program1
                   />
-                 
+                 </div>
                 </div>
                
                 

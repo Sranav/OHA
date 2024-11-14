@@ -203,13 +203,13 @@ function AluminiBanners() {
             {width && width < 1024 ? (
                 // Mobile version
                 <>
-                    <div className="flex justify-end md:pt-6 xs:pt-[80px] bg-white">
+                    <div className="flex justify-center md:pt-6 xs:pt-[80px] bg-white">
                         <div className="flex flex-col text-white w-full md:w-3/4 lg:w-2/3">
-                            <div className="text-[24px] font-bold leading-normal text-black text-center">
+                            <div className="text-[24px] font-bold leading-[1.2] text-black text-center">
                                 OPTIMUM HOCKEY ACADEMY
                             </div>
                             <div
-                                className="text-[64px] text-red-text pt-5 font-bold text-center"
+                                className="text-[64px] text-red-text pt-5 font-bold text-center leading-[1.2]"
                                 style={{ WebkitTextStrokeWidth: "1px", WebkitTextStrokeColor: "#907E7E" }}
                             >
                                 Notable Alumni
@@ -223,16 +223,16 @@ function AluminiBanners() {
                                            
                                         </div>
                                         <div className="py-4 px-8 flex flex-col bg-[#D9D9D9] border border-[#737373] mt-[36px]">
-                                                <h1 className="text-red-text text-[32px] font-bold leading-normal">
+                                                <h1 className="text-red-text text-[32px] font-bold leading-[1.2]">
                                                     {slides[activeSlide].title}
                                                 </h1>
-                                                <div className="text-black text-[16px] font-normal leading-normal">
+                                                <div className="text-black text-[16px] font-normal leading-[1.2]">
                                                     {slides[activeSlide].subtitle}
                                                 </div>
-                                                <div className="text-black text-[16px] font-bold leading-normal">
+                                                <div className="text-black text-[16px] font-bold leading-[1.2]">
                                                     {slides[activeSlide].subyear}
                                                 </div>
-                                                <ul className="py-3 text-black text-[20px] font-normal leading-normal list-disc">
+                                                <ul className="py-3 text-black text-[20px] font-normal leading-[1.2] list-disc">
                                                     {slides[activeSlide].description.map((item, index) => (
                                                         <li key={index} className="">{item}</li>
                                                     ))}
@@ -287,86 +287,86 @@ function AluminiBanners() {
                     </div>
                     <div className="flex flex-col gap-10 pt-8 ml-[204px] mr-[37px] ">
                         <div className="flex gap-5">
-                            <div className="flex w-[138px] h-[140px]">
-                                <img src={TannerHenricks} alt="" className=" " />
+                            <div className="flex ">
+                            <img src={TannerHenricks} alt="" className="object-cover flex-shrink-0 max-w-[120px] max-h-[140px] " />
                             </div>
-                            <div className="flex flex-row border border-[#737373] bg-[#E8E4E4] gap-6 w-full  ">
-                                <div className="flex flex-col pt-9 p-4">
-                                    <div className="text-[32px] text-red-text font-bold leading-normal">Tanner Henricks</div>
-                                    <div className="text-black text-[16px] font-normal leading-normal">Defense</div>
-                                    <div className="text-black text-[16px] font-bold leading-normal">OHA 2023</div>
+                            <div className="flex flex-row border border-[#737373] bg-[#E8E4E4] gap-6 w-full min-h-[140px]  ">
+                                <div className="flex flex-col pt-9 pl-[14px] pb-[43px]">
+                                    <div className="text-[32px] text-red-text font-bold leading-[1.2]">Tanner Henricks</div>
+                                    <div className="text-black text-[16px] font-normal leading-[1.2]">Defense</div>
+                                    <div className="text-black text-[16px] font-bold leading-[1.2]">OHA 2023</div>
                                 </div>
-                                <div className="flex flex-col pt-6 p-4">
+                                <div className="flex flex-col pt-6">
                                     <ul className="list-disc pl-5 list-outside ">
-                                        <li className="text-[20px] text-black leading-normal font-normal">NHL - Columbus Blue Jackets 2024 Draft Pick (Round 4, #101 overall)</li>
-                                        <li className="text-[20px] text-black leading-normal font-normal">NCAA - St Cloud State University</li>
-                                        <li className="text-[20px] text-black leading-normal font-normal">NCDC - Utah Outliers 2023 Entry Draft Pick (Round 8, #145 overall)</li>
-                                        <li className="text-[20px] text-black leading-normal font-normal">USHL - Lincoln Stars 2022 USHL Futures Draft Pick (Round 6, #86 overall)</li>
+                                        <li className="text-[20px] text-black leading-[1.2] font-normal">NHL - Columbus Blue Jackets 2024 Draft Pick (Round 4, #101 overall)</li>
+                                        <li className="text-[20px] text-black leading-[1.2] font-normal">NCAA - St Cloud State University</li>
+                                        <li className="text-[20px] text-black leading-[1.2] font-normal">NCDC - Utah Outliers 2023 Entry Draft Pick (Round 8, #145 overall)</li>
+                                        <li className="text-[20px] text-black leading-[1.2] font-normal">USHL - Lincoln Stars 2022 USHL Futures Draft Pick (Round 6, #86 overall)</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div className="flex  gap-5">
+                        <div className="flex ">
                             <div className="flex ">
-                                <img src={TyHenricks} alt="" className="h-[140px]" />
+                                <img src={TyHenricks} alt="" className="max-h-[138px] max-w-[138px]" />
                             </div>
-                            <div className="flex flex-row border border-[#737373] bg-[#E8E4E4] gap-6 w-full ">
-                                <div className="flex flex-col pt-9 p-4">
-                                    <div className="text-[32px] text-red-text font-bold leading-normal">Ty Henricks</div>
-                                    <div className="text-black text-[16px] font-normal leading-normal">Left Wing</div>
-                                    <div className="text-black text-[16px] font-bold leading-normal">OHA 2022</div>
+                            <div className="flex flex-row border border-[#737373] bg-[#E8E4E4] gap-[94px] w-full min-h-[186px] ">
+                                <div className="flex flex-col pt-9 pl-[14px] pb-[43px] ">
+                                    <div className="text-[32px] text-red-text font-bold leading-[1.2]">Ty Henricks</div>
+                                    <div className="text-black text-[16px] font-normal leading-[1.2]">Left Wing</div>
+                                    <div className="text-black text-[16px] font-bold leading-[1.2]">OHA 2022</div>
                                 </div>
-                                <div className="flex flex-col pt-6 ml-[80px]">
+                                <div className="flex flex-col pt-2 ">
                                     <ul className="list-disc pl-5 list-outside">
-                                        <li className="text-[20px] text-black leading-normal font-normal">NHL - New York Rangers 2023 Draft Pick (Round 6, #183 overall)</li>
-                                        <li className="text-[20px] text-black leading-normal font-normal">NCAA - Western Michigan University</li>
-                                        <li className="text-[20px] text-black leading-normal font-normal">USHL - Muskegon Lumberjacks</li>
-                                        <li className="text-[20px] text-black leading-normal font-normal">USHL - Fargo Force</li>
-                                        <li className="text-[20px] text-black leading-normal font-normal">USHL - Youngstown Phantoms 2021 Draft Pick (Round 7, #91 overall)</li>
-                                        <li className="text-[20px] text-black leading-normal font-normal">WHL - Brandon Wheat Kings 2020 US Prospect Draft Pick (Round 2, #28 <br />overall)</li>
+                                        <li className="text-[20px] text-black leading-[1.2] font-normal">NHL - New York Rangers 2023 Draft Pick (Round 6, #183 overall)</li>
+                                        <li className="text-[20px] text-black leading-[1.2] font-normal">NCAA - Western Michigan University</li>
+                                        <li className="text-[20px] text-black leading-[1.2] font-normal">USHL - Muskegon Lumberjacks</li>
+                                        <li className="text-[20px] text-black leading-[1.2]l font-normal">USHL - Fargo Force</li>
+                                        <li className="text-[20px] text-black leading-[1.2] font-normal">USHL - Youngstown Phantoms 2021 Draft Pick (Round 7, #91 overall)</li>
+                                        <li className="text-[20px] text-black leading-[1.2] font-normal">WHL - Brandon Wheat Kings 2020 US Prospect Draft Pick (Round 2, #28 overall)</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div className="flex  justify-center gap-5">
+                        <div className="flex  justify-center gap-3">
                             <div className="flex ">
-                                <img src={TylerMcGowan} alt="" className="h-[140px]" />
+                                <img src={TylerMcGowan} alt="" className="max-w-[124px] max-h-[124px]" />
                             </div>
-                            <div className="flex flex-row border border-[#737373] bg-[#E8E4E4] gap-6  w-full">
-                                <div className="flex flex-col pt-9 p-4">
-                                    <div className="text-[32px] text-red-text font-bold leading-normal">Tyler McGowan</div>
-                                    <div className="text-black text-[16px] font-normal leading-normal">Defense</div>
-                                    <div className="text-black text-[16px] font-bold leading-normal">OHA 2023</div>
+                            <div className="flex flex-row border border-[#737373] bg-[#E8E4E4] gap-9  w-full min-h-[141px]">
+                                <div className="flex flex-col pt-9 pl-[14px] pb-[43px]">
+                                    <div className="text-[32px] text-red-text font-bold leading-[1.2]">Tyler McGowan</div>
+                                    <div className="text-black text-[16px] font-normal leading-[1.2]">Defense</div>
+                                    <div className="text-black text-[16px] font-bold leading-[1.2]">OHA 2023</div>
                                 </div>
-                                <div className="flex flex-col pt-6 p-4">
-                                    <ul className="list-disc pl-5 list-outside ">
-                                        <li className="text-[20px] text-black leading-normal font-normal">NAHL - Fairbanks Ice Dogs</li>
-                                        <li className="text-[20px] text-black leading-normal font-normal">NAHL - Janesville Jets</li>
-                                        <li className="text-[20px] text-black leading-normal font-normal">NCDC - Utah Outliers 2023 Entry Draft Pick (Round 9, #163 overall)</li>
-                                        <li className="text-[20px] text-black leading-normal font-normal">USHL - Muskegon Lumberjacks 2022 Draft Pick (Round 5, #70 overall)</li>
-                                        <li className="text-[20px] text-black leading-normal font-normal">WHL - Victoria Royals 2021 US Prospect Draft Pick (Round 2, #36 overall) </li>
+                                <div className="flex flex-col">
+                                    <ul className="list-disc pl-5 pt-2 list-outside ">
+                                        <li className="text-[20px] text-black leading-[1.2] font-normal">NAHL - Fairbanks Ice Dogs</li>
+                                        <li className="text-[20px] text-black leading-[1.2] font-normal">NAHL - Janesville Jets</li>
+                                        <li className="text-[20px] text-black leading-[1.2] font-normal">NCDC - Utah Outliers 2023 Entry Draft Pick (Round 9, #163 overall)</li>
+                                        <li className="text-[20px] text-black leading-[1.2] font-normal">USHL - Muskegon Lumberjacks 2022 Draft Pick (Round 5, #70 overall)</li>
+                                        <li className="text-[20px] text-black leading-[1.2] font-normal">WHL - Victoria Royals 2021 US Prospect Draft Pick (Round 2, #36 overall) </li>
 
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div className="flex  justify-center gap-5 pb-5">
+                        <div className="flex  justify-center gap-3 pb-5">
                             <div className="flex ">
-                                <img src={CK} alt="" className="h-[70px] w-[132px]" />
+                                <img src={CK} alt="" className="max-h-[70px] max-w-[125px] mt-[10px]" />
                             </div>
-                            <div className="flex flex-row border border-[#737373] bg-[#E8E4E4] gap-6  w-full">
-                                <div className="flex flex-col pt-9 p-4">
-                                    <div className="text-[32px] text-red-text font-bold leading-normal">Christian Kim</div>
-                                    <div className="text-black text-[16px] font-normal leading-normal">Forward</div>
-                                    <div className="text-black text-[16px] font-bold leading-normal">OHA 2022</div>
+                            <div className="flex flex-row border border-[#737373] bg-[#E8E4E4] gap-16  w-full min-h-[141px]">
+                                <div className="flex flex-col pt-9 pl-[14px] pb-[43px]">
+                                    <div className="text-[32px] text-red-text font-bold leading-[1.2]">Christian Kim</div>
+                                    <div className="text-black text-[16px] font-normal leading-[1.2]">Forward</div>
+                                    <div className="text-black text-[16px] font-bold leading-[1.2]">OHA 2022</div>
                                 </div>
-                                <div className="flex flex-col pt-6 p-4 ml-10">
-                                    <ul className="list-disc pl-5 list-outside ">
-                                        <li className="text-[20px] text-black leading-normal font-normal">BCHL - Trail Smoke Eaters</li>
-                                        <li className="text-[20px] text-black leading-normal font-normal">BCHL - Wenatchee Wild</li>
-                                        <li className="text-[20px] text-black leading-normal font-normal">NCDC - New Jersey Rockets 2022 Entry Draft Pick (Round 17, #227 overall)</li>
-                                        <li className="text-[20px] text-black leading-normal font-normal">USHL - Tri City Storm 2021 USHL Futures Draft Pick (Round 4, #52 overall)</li>
-                                        <li className="text-[20px] text-black leading-normal font-normal">WHL - Vancouver Giants 2020 Bantam Draft Pick (Round 7, #135 overall) </li>
+                                <div className="flex flex-col">
+                                    <ul className="list-disc pl-5 pt-2 list-outside ">
+                                        <li className="text-[20px] text-black leading-[1.2] font-normal">BCHL - Trail Smoke Eaters</li>
+                                        <li className="text-[20px] text-black leading-[1.2] font-normal">BCHL - Wenatchee Wild</li>
+                                        <li className="text-[20px] text-black leading-[1.2] font-normal">NCDC - New Jersey Rockets 2022 Entry Draft Pick (Round 17, #227 overall)</li>
+                                        <li className="text-[20px] text-black leading-[1.2] font-normal">USHL - Tri City Storm 2021 USHL Futures Draft Pick (Round 4, #52 overall)</li>
+                                        <li className="text-[20px] text-black leading-[1.2] font-normal">WHL - Vancouver Giants 2020 Bantam Draft Pick (Round 7, #135 overall) </li>
 
                                     </ul>
                                 </div>

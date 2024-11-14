@@ -85,7 +85,7 @@ const FAQComponentMobile: React.FC = () => {
                 className="w-full py-6 text-left flex items-center justify-between"
                 onClick={() => toggle(index)}
               >
-                <span className="text-[16px] leading-normal text-gray-text font-normal pl-8">
+                <span className="text-[16px] leading-[1.2] text-gray-text font-normal pl-8">
                   {faq.question === "Sample Schedule" ? "SAMPLE SCHOOL SCHEDULE" : faq.question}
                 </span>
                 <img
@@ -115,7 +115,7 @@ const FAQComponentMobile: React.FC = () => {
                           background: `url(${sheduleImage}) lightgray -426.018px 0px / 160.131% 100% no-repeat`,
                         }}
                       >
-                        <div className="font-normal text-[16px] text-black leading-normal">
+                        <div className="font-normal text-[16px] text-black leading-[1.2]">
                           {/* Add Event and Time headers */}
                           <div className="flex justify-between mb-4">
                             <div className="font-bold text-[24px]">Event</div>
@@ -125,10 +125,10 @@ const FAQComponentMobile: React.FC = () => {
                           {faq.links.map((linkItem, linkIndex) => (
                             <div key={linkIndex} className="flex justify-between items-center mb-4">
                               <div>
-                                <div className="text-[16px] leading-normal font-normal">{linkItem.name}</div>
+                                <div className="text-[16px] leading-[1.2] font-normal">{linkItem.name}</div>
                                 {/* If subContent exists, display it */}
                                 {linkItem.subContent && (
-                                  <div className="text-[16px] leading-normal font-normal text-black mt-2 ">
+                                  <div className="text-[16px] leading-[1.2] font-normal text-black ">
                                     {linkItem.subContent.map((content, contentIndex) => (
                                       <p key={contentIndex}>{content}</p>
                                     ))}
@@ -137,7 +137,7 @@ const FAQComponentMobile: React.FC = () => {
                               </div>
                               <div>
                                 {linkItem.time && (
-                                  <div className="text-[16px] leading-normal font-normal">{linkItem.time}</div>
+                                  <div className="text-[16px] leading-[1.2] font-normal">{linkItem.time}</div>
                                 )}
                               </div>
                             </div>
@@ -146,14 +146,14 @@ const FAQComponentMobile: React.FC = () => {
                       </div>
                     </div>
                   ) : (
-                    <ul className="space-y-4 list-disc pl-8 ml-4">
+                    <ul className=" list-disc pl-8 ml-4">
                       {faq.links.map((linkItem, linkIndex) => (
-                        <li key={linkIndex} className="text-[16px] leading-normal font-normal text-black">
+                        <li key={linkIndex} className="text-[16px] leading-[1.2] font-normal text-black">
                           {linkItem.name}
                           {linkItem.subLinks && (
                             <ul className="ml-6 list-disc pl-6">
                               {linkItem.subLinks.map((subLink, subLinkIndex) => (
-                                <li key={subLinkIndex} className="text-[16px] leading-normal font-normal text-black">
+                                <li key={subLinkIndex} className="text-[16px] leading-[1.2] font-normal text-black">
                                   {subLink}
                                 </li>
                               ))}
