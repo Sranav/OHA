@@ -1,6 +1,6 @@
 import HomeCircle from "../../assets/images/HomeCircle.png";
-import Instagram from "../../assets/images/Insta.png";
-import YouTube from "../../assets/images/YouTube.png";
+import Instagram from "../../assets/images/Instgram.png";
+import YouTube from "../../assets/images/Youtube.png";
 import FaceBook from "../../assets/images/FaceBook.png";
 import HomeBannerTest from "../../assets/images/HomeBanner.png";
 import MobileHomeBanner from "../../assets/images/MobileHomeBanner.png";
@@ -81,13 +81,13 @@ function FaqBanner() {
                 // Desktop version
                 <>
                     <div className="absolute left-0 top-[50%] flex flex-col py-2 gap-4 z-10 bg-red-text items-start">
-                        <a href="" target="_blank" rel="noopener noreferrer" className="text-white text-2xl hover:text-red-text">
+                        <a href="" target="_blank" rel="noopener noreferrer" className="text-white  hover:text-red-text pl-2 hover:scale-110 transition-transform duration-300">
                             <img src={Instagram} alt="Instagram" />
                         </a>
-                        <a href="" target="_blank" rel="noopener noreferrer" className="text-white text-2xl hover:text-red-text">
+                        <a href="" target="_blank" rel="noopener noreferrer" className="text-white hover:text-red-text  hover:scale-110 transition-transform duration-300">
                             <img src={YouTube} alt="YouTube" />
                         </a>
-                        <a href="" target="_blank" rel="noopener noreferrer" className="text-white text-2xl hover:text-red-text">
+                        <a href="" target="_blank" rel="noopener noreferrer" className="text-white  hover:text-red-text pl-2.5">
                             <img src={FaceBook} alt="FaceBook" />
                         </a>
                     </div>

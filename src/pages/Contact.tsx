@@ -4,8 +4,8 @@ import HomeBannerImage from "../assets/images/HomeBanner.png";
 export const Contact = () => {
   return (
     <Layout bannerPath={HomeBannerImage} page={PAGE.CONTACT}>
-
-    <div className="mt-52"><HomeFooter/></div>
+      
+    <div className="lg:mt-[400px] xs:mt-0 "><HomeFooter/></div>
   </Layout>
   );
 };

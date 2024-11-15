@@ -1,6 +1,6 @@
 import HomeCircle from "../../assets/images/HomeCircle.png";
-import Instagram from "../../assets/images/Insta.png";
-import YouTube from "../../assets/images/YouTube.png";
+import Instagram from "../../assets/images/Instgram.png";
+import YouTube from "../../assets/images/Youtube.png";
 import FaceBook from "../../assets/images/FaceBook.png";
 import HomeBannerTest from "../../assets/images/HomeBanner.png";
 import MobileHomeBanner1 from "../../assets/images/MobileHomeBanner1.png";
@@ -22,14 +22,14 @@ function HomeBanner() {
       {width && width < 1024 ? (
         // Mobile version
         <>
-          <div className="absolute left-0 top-[50%] flex flex-col py-2 gap-4 z-10 bg-red-text items-start">
-            <a href="" target="_blank" rel="noopener noreferrer" className="text-white text-2xl hover:text-red-text pl-2 hover:scale-110 transition-transform duration-300">
+          <div className="absolute left-0 top-full mt-20 flex flex-col py-2 gap-4 z-10 bg-red-text items-start">
+            <a href="" target="_blank" rel="noopener noreferrer" className="text-white  hover:text-red-text pl-2 hover:scale-110 transition-transform duration-300">
               <img src={Instagram} alt="Instagram" />
             </a>
-            <a href="" target="_blank" rel="noopener noreferrer" className="text-white text-2xl hover:text-red-text pl-2 hover:scale-110 transition-transform duration-300">
+            <a href="" target="_blank" rel="noopener noreferrer" className="text-white hover:text-red-text  hover:scale-110 transition-transform duration-300">
               <img src={YouTube} alt="YouTube" />
             </a>
-            <a href="" target="_blank" rel="noopener noreferrer" className="text-white text-2xl hover:text-red-text pl-2">
+            <a href="" target="_blank" rel="noopener noreferrer" className="text-white  hover:text-red-text pl-2.5 hover:scale-110 transition-transform duration-300">
               <img src={FaceBook} alt="FaceBook" />
             </a>
           </div>
@@ -103,13 +103,13 @@ function HomeBanner() {
         // Desktop version
         <>
           <div className="absolute left-0 top-[50%] flex flex-col py-2 gap-4 z-10 bg-red-text items-start">
-            <a href="" target="_blank" rel="noopener noreferrer" className="text-white text-2xl hover:text-red-text pl-2 hover:scale-110 transition-transform duration-300">
+            <a href="" target="_blank" rel="noopener noreferrer" className="text-white  hover:text-red-text pl-2 hover:scale-110 transition-transform duration-300">
               <img src={Instagram} alt="Instagram" />
             </a>
-            <a href="" target="_blank" rel="noopener noreferrer" className="text-white text-2xl hover:text-red-text pl-2 hover:scale-110 transition-transform duration-300">
+            <a href="" target="_blank" rel="noopener noreferrer" className="text-white hover:text-red-text  hover:scale-110 transition-transform duration-300">
               <img src={YouTube} alt="YouTube" />
             </a>
-            <a href="" target="_blank" rel="noopener noreferrer" className="text-white text-2xl hover:text-red-text pl-2">
+            <a href="" target="_blank" rel="noopener noreferrer" className="text-white  hover:text-red-text pl-2.5 hover:scale-110 transition-transform duration-300">
               <img src={FaceBook} alt="FaceBook" />
             </a>
           </div>
