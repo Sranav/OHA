@@ -1,6 +1,7 @@
 import { NavBar } from "../NavBar";
 import AboutBanner from "./AboutBanner";
 import AluminiBanners from "./AluminiBanners";
+import CalenderBanner from "./CalenderBanner";
 import ContactBanner from "./ContactBanner";
 import FaqBanner from "./FaqBanner";
 import HomeBanner from "./HomeBanner";
@@ -19,7 +20,8 @@ export enum PAGE {
     ContactUs = "contactus",
     Alumini ="alumini",
     FAQ ="faq",
-    CONTACT ="contact"
+    CONTACT ="contact",
+    CALENDER ="Calender",
 }
 const Layout: React.FC<LayoutProps> = ({ children, bannerPath, page = PAGE.HOME }) => {
   return (
@@ -41,6 +43,7 @@ const Layout: React.FC<LayoutProps> = ({ children, bannerPath, page = PAGE.HOME 
         {page === PAGE.Alumini && <AluminiBanners />}
         {page === PAGE.FAQ && <FaqBanner />}
         {page === PAGE.CONTACT && <ContactBanner />}
+        {page === PAGE.CALENDER && <CalenderBanner />}
         {/* {page === PAGE.ABOUT && <AboutBanner/>}
           {page === PAGE.NonProfit && <NonProfitBanner/>}
           {page === PAGE.ContactUs && <ContactBanner/>} */}

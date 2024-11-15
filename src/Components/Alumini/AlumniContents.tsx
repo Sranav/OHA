@@ -14,7 +14,7 @@ const AlumniContents = () => {
                     <div className="flex">
                         <img src={ColinFrank} alt="" className="max-w-[125px] max-h-[124px]" />
                     </div>
-                    <div className="flex flex-row border border-[#737373] bg-[#E8E4E4] gap-24  w-full min-h-[141px]">
+                    <div className="flex flex-row border border-[#737373] bg-[#E8E4E4] gap-24  w-full xl:max-h-[141px] lg:min-h-[141px]">
                         <div className="flex flex-col pt-9 pl-[14px] pb-[43px]">
                             <div className="text-[32px] text-red-text font-bold leading-[1.2]">Colin Frank</div>
                             <div className="text-black text-[16px] font-normal leading-[1.2]">Defense</div>
@@ -34,7 +34,7 @@ const AlumniContents = () => {
                     <div className="flex ">
                         <img src={MilesRoberts} alt="" className="max-w-[124px] max-h-[124px] mt-[10px]" />
                     </div>
-                    <div className="flex flex-row border border-[#737373] bg-[#E8E4E4] gap-14  w-full min-h-[161px]">
+                    <div className="flex flex-row border border-[#737373] bg-[#E8E4E4] gap-14  w-full xl:max-h-[161px] lg:min-h-[161px]">
                         <div className="flex flex-col pt-9 pl-[14px] pb-[43px]">
                             <div className="text-[32px] text-red-text font-bold leading-[1.2]">Miles Roberts</div>
                             <div className="text-black text-[16px] font-normal leading-[1.2]">Goalie</div>
@@ -56,7 +56,7 @@ const AlumniContents = () => {
                     <div className="flex ">
                         <img src={MerrilSteenari} alt="" className="max-w-[130px] max-h-[73px] mt-7" />
                     </div>
-                    <div className="flex flex-row border border-[#737373] bg-[#E8E4E4] gap-8  w-full min-h-[141px]">
+                    <div className="flex flex-row border border-[#737373] bg-[#E8E4E4] gap-8  w-full xl:max-h-[141px] lg:min-h-[141px]">
                         <div className="flex flex-col pt-9 pl-[14px] pb-[43px]">
                             <div className="text-[32px] text-red-text font-bold leading-[1.2]">Merril Steenari</div>
                             <div className="text-black text-[16px] font-normal leading-[1.2]">Forward</div>
@@ -78,7 +78,7 @@ const AlumniContents = () => {
                     <div className="flex  ">
                         <img src={JamesHong} alt="" className="max-w-[122px] max-h-[122px]" />
                     </div>
-                    <div className="flex flex-row border border-[#737373] bg-[#E8E4E4] gap-[78px]  w-full min-h-[141px]">
+                    <div className="flex flex-row border border-[#737373] bg-[#E8E4E4] gap-[78px]  w-full xl:max-h-[141px] lg:min-h-[141px]">
                         <div className="flex flex-col pt-9 pl-[14px] pb-[43px]">
                             <div className="text-[32px] text-red-text font-bold leading-[1.2]">James Hong</div>
                             <div className="text-black text-[16px] font-normal leading-[1.2]">Forward</div>
@@ -100,7 +100,7 @@ const AlumniContents = () => {
                     <div className="flex ">
                         <img src={JonasKemps} alt="" className="max-w-[110px] max-h-[138px]" />
                     </div>
-                    <div className="flex flex-row border border-[#737373] bg-[#E8E4E4] gap-14 w-full min-h-[141px]">
+                    <div className="flex flex-row border border-[#737373] bg-[#E8E4E4] gap-14 w-full xl:max-h-[141px] lg:min-h-[141px]">
                         <div className="flex flex-col pt-9 pl-[14px] pb-[43px]">
                             <div className="text-[32px] text-red-text font-bold leading-[1.2]">Jonas Kemps</div>
                             <div className="text-black text-[16px] font-normal leading-[1.2]">Defense</div>
@@ -119,7 +119,7 @@ const AlumniContents = () => {
                     <div className="flex  ">
                         <img src={ZaneTorre} alt="" className="max-w-[110px] max-h-[138px]" />
                     </div>
-                    <div className="flex flex-row border border-[#737373] bg-[#E8E4E4] gap-24 w-full min-h-[141px]">
+                    <div className="flex flex-row border border-[#737373] bg-[#E8E4E4] gap-24 w-full xl:max-h-[141px] lg:min-h-[141px]">
                         <div className="flex flex-col pt-9 pl-[14px] pb-[43px]">
                             <div className="text-[32px] text-red-text font-bold leading-[1.2]">Zane Torre</div>
                             <div className="text-black text-[16px] font-normal leading-[1.2]">Forward</div>
@@ -140,7 +140,7 @@ const AlumniContents = () => {
                     <div className="flex">
                         <img src={Odin} alt="" className="max-w-[123px] max-h-[82px]" />
                     </div>
-                    <div className="flex flex-row border border-[#737373] bg-[#E8E4E4] gap-[11px] w-full min-h-[141px]">
+                    <div className="flex flex-row border border-[#737373] bg-[#E8E4E4] gap-[11px] w-full xl:max-h-[141px] lg:min-h-[141px]">
                         <div className="flex flex-col pt-9 pl-[14px] pb-[43px]">
                             <div className="text-[32px] text-red-text font-bold leading-[1.2]">Odin Vauhkonen</div>
                             <div className="text-black text-[16px] font-normal leading-[1.2]">Defense</div>
