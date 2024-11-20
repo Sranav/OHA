@@ -3,7 +3,7 @@ import Instagram from "../../assets/images/Instgram.png";
 import YouTube from "../../assets/images/Youtube.png";
 import FaceBook from "../../assets/images/FaceBook.png";
 import HomeBannerTest from "../../assets/images/HomeBanner.png";
-import MobileHomeBanner1 from "../../assets/images/MobileHomeBanner1.png";
+import MobileHomeBanner from "../../assets/images/MobileHomeBanner.png";
 import useWindowSize from "../../hooks/useWindowSize";
 import { useForm } from "react-hook-form";
 import ReCAPTCHA from "react-google-recaptcha";
@@ -20,7 +20,7 @@ type FormData = {
 
 function ContactBanner() {
     const { width } = useWindowSize();
-    const bannerImage = width < 1024 ? MobileHomeBanner1 : HomeBannerTest;
+    const bannerImage = width < 1024 ? MobileHomeBanner : HomeBannerTest;
     const {
         register,
         handleSubmit,
@@ -72,7 +72,7 @@ function ContactBanner() {
 
     return (
         <div
-            className="relative min-h-[518px] md:pt-7 xs:pt-[90px]"
+            className="relative min-h-[518px] md:pt-2 xs:pt-[90px]"
             style={{
                 backgroundImage: `url(${bannerImage})`,
                 backgroundSize: "cover",
@@ -82,7 +82,7 @@ function ContactBanner() {
         >
             {width && width < 1024 ? (
                 // Mobile version
-                <div className="flex justify-center md:pt-6 xs:pt-[50px] px-[19px]">
+                <div className="flex justify-center md:pt-6 xs:pt-[70px] px-[19px]">
                     <form
                         className="w-[326px] mx-[30px]"
                         onSubmit={handleSubmit(onSubmit)}
@@ -262,13 +262,13 @@ function ContactBanner() {
                 // Desktop version
                 <>
                     <div className="absolute left-0 top-[50%] flex flex-col py-2 gap-4 z-10 bg-red-text items-start">
-                        <a href="" target="_blank" rel="noopener noreferrer" className="text-white  hover:text-red-text pl-2 hover:scale-110 transition-transform duration-300">
+                        <a href=" https://www.instagram.com/optimumhockeyacademy/" target="_blank" rel="noopener noreferrer" className="text-white  hover:text-red-text pl-2 hover:scale-110 transition-transform duration-300">
                             <img src={Instagram} alt="Instagram" />
                         </a>
-                        <a href="" target="_blank" rel="noopener noreferrer" className="text-white hover:text-red-text  hover:scale-110 transition-transform duration-300">
+                        <a href="https://www.youtube.com/@optimumhockeyacademy3211" target="_blank" rel="noopener noreferrer" className="text-white hover:text-red-text  hover:scale-110 transition-transform duration-300">
                             <img src={YouTube} alt="YouTube" />
                         </a>
-                        <a href="" target="_blank" rel="noopener noreferrer" className="text-white  hover:text-red-text pl-2.5">
+                        <a href="https://www.facebook.com/optimumhockeyacademy" target="_blank" rel="noopener noreferrer" className="text-white  hover:text-red-text pl-2.5 hover:scale-110 transition-transform duration-300">
                             <img src={FaceBook} alt="FaceBook" />
                         </a>
                     </div>

@@ -1,12 +1,13 @@
 import HomeFooter from "../Components/Home/HomeFooter";
 import Layout, { PAGE } from "../Components/Layout/Layout";
+import { NavBar } from "../Components/NavBar";
 import HomeBannerImage from "../assets/images/HomeBanner.png";
 
 export const Faq = () => {
   return (
-    <Layout bannerPath={HomeBannerImage} page={PAGE.FAQ}>
+    <><NavBar /><Layout bannerPath={HomeBannerImage} page={PAGE.FAQ}>
 
-    <div><HomeFooter/></div>
-  </Layout>
+      <div><HomeFooter /></div>
+    </Layout></>
   );
 };

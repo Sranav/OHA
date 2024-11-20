@@ -11,7 +11,7 @@ function FaqBanner() {
     const bannerImage = width < 1024 ? MobileHomeBanner : HomeBannerTest;
     return (
         <div
-            className="relative min-h-screen  md:pt-7 xs:pt-[90px]"  // Set min-height to full screen
+            className="relative"  // Set min-height to full screen
             style={{
 
                 backgroundImage: `url(${bannerImage})`,
@@ -36,7 +36,7 @@ function FaqBanner() {
                             <img src={FaceBook} alt="FaceBook" />
                         </a>
                     </div> */}
-                    <div className="flex justify-end md:pt-6 xs:pt-[50px] px-[19px]">
+                    <div className="flex justify-end md:pt-6 xs:pt-[110px] px-[19px]">
                         <div className="flex flex-col  text-white w-full md:w-3/4 lg:w-2/3">
                             <div className="text-[24px] font-bold leading-[1.2]"> OPTIMUM HOCKEY ACADEMY</div>
                             <div className=" text-[36px] text-red-text font-bold">
@@ -81,19 +81,19 @@ function FaqBanner() {
                 // Desktop version
                 <>
                     <div className="absolute left-0 top-[50%] flex flex-col py-2 gap-4 z-10 bg-red-text items-start">
-                        <a href="" target="_blank" rel="noopener noreferrer" className="text-white  hover:text-red-text pl-2 hover:scale-110 transition-transform duration-300">
+                        <a href=" https://www.instagram.com/optimumhockeyacademy/" target="_blank" rel="noopener noreferrer" className="text-white  hover:text-red-text pl-2 hover:scale-110 transition-transform duration-300">
                             <img src={Instagram} alt="Instagram" />
                         </a>
-                        <a href="" target="_blank" rel="noopener noreferrer" className="text-white hover:text-red-text  hover:scale-110 transition-transform duration-300">
+                        <a href="https://www.youtube.com/@optimumhockeyacademy3211" target="_blank" rel="noopener noreferrer" className="text-white hover:text-red-text  hover:scale-110 transition-transform duration-300">
                             <img src={YouTube} alt="YouTube" />
                         </a>
-                        <a href="" target="_blank" rel="noopener noreferrer" className="text-white  hover:text-red-text pl-2.5">
+                        <a href="https://www.facebook.com/optimumhockeyacademy" target="_blank" rel="noopener noreferrer" className="text-white  hover:text-red-text pl-2.5 hover:scale-110 transition-transform duration-300">
                             <img src={FaceBook} alt="FaceBook" />
                         </a>
                     </div>
 
-                    <div className="flex justify-end pt-6 ">
-                        <div className="flex flex-col text-[24px] font-bold leading-[1.2] text-white w-full md:w-3/4 lg:w-2/3">
+                    <div className="flex justify-end pt-[21px] pb-4 ">
+                        <div className="flex flex-col text-[24px] font-bold leading-[1.2] text-white w-full md:w-3/4 lg:w-3/4 max-w-[904px] 3xl:mr-[40%]">
                             <div> OPTIMUM HOCKEY ACADEMY</div>
                             <div className="text-[64px] text-red-text font-bold leading-[1.2]" >
                                 FAQ
