@@ -18,6 +18,7 @@ import JamesHong from "../../assets/images/JamesHong.png";
 import JonasKemps from "../../assets/images/JonasKemps.png";
 import ZaneTorre from "../../assets/images/ZaneTorre.png";
 import Odin from "../../assets/images/Odin.png";
+import { Link } from "react-router-dom";
 function AluminiBanners() {
     const { width } = useWindowSize();
     const bannerImage = width < 1024 ? MobileHomeBanner : HomeBannerTest;
@@ -192,7 +193,7 @@ function AluminiBanners() {
 
     return (
         <div
-            className="relative min-h-screen  md:pt-7 xs:pt-[90px]"  // Set min-height to full screen
+            className="relative md:pt-0 xs:pt-[90px]"  // Set min-height to full screen
             style={{
                 backgroundImage: isLargeScreen ? `url(${bannerImage})` : "none",
                 backgroundSize: "cover", // Ensures the image covers the entire div
@@ -203,7 +204,7 @@ function AluminiBanners() {
             {width && width < 1024 ? (
                 // Mobile version
                 <>
-                    <div className="flex justify-center md:pt-6 xs:pt-[80px] bg-white">
+                    <div className="flex justify-center md:pt-6 xs:pt-[17px] bg-white">
                         <div className="flex flex-col text-white w-full md:w-3/4 lg:w-2/3">
                             <div className="text-[24px] font-bold leading-[1.2] text-black text-center">
                                 OPTIMUM HOCKEY ACADEMY
@@ -215,10 +216,11 @@ function AluminiBanners() {
                                 Notable Alumni
                             </div>
 
-                            <div className="flex justify-center py-5">
+                            <div className="flex justify-center pt-5">
                                 <div className="w-96 relative">
                                     <div className="w-full">
                                         <div className=" flex transition-all duration-300 justify-center">
+
                                             <img className=" w-[140px] h-[140px]" src={slides[activeSlide].img} alt="Slide" />
 
                                         </div>
@@ -244,7 +246,7 @@ function AluminiBanners() {
                         </div>
                     </div>
                     {/* Button controls outside the box */}
-                    <div className="flex justify-between gap-4 pt-4 mx-3 pb-10"> {/* Ensure centered alignment */}
+                    <div className="flex justify-between gap-4 pt-[53px] px-3 pb-[50px] bg-white"> {/* Ensure centered alignment */}
                         <button
                             onClick={handlePrevSlide}
                             className="text-red-600 cursor-pointer flex items-center gap-2"
@@ -266,31 +268,33 @@ function AluminiBanners() {
                 // Desktop version
                 <>
                     <div className="absolute left-0 top-[50%] flex flex-col py-2 gap-4 z-10 bg-red-text items-start">
-                        <a href="" target="_blank" rel="noopener noreferrer" className="text-white  hover:text-red-text pl-2 hover:scale-110 transition-transform duration-300">
+                        <a href=" https://www.instagram.com/optimumhockeyacademy/" target="_blank" rel="noopener noreferrer" className="text-white  hover:text-red-text pl-2 hover:scale-110 transition-transform duration-300">
                             <img src={Instagram} alt="Instagram" />
                         </a>
-                        <a href="" target="_blank" rel="noopener noreferrer" className="text-white hover:text-red-text  hover:scale-110 transition-transform duration-300">
+                        <a href="https://www.youtube.com/@optimumhockeyacademy3211" target="_blank" rel="noopener noreferrer" className="text-white hover:text-red-text  hover:scale-110 transition-transform duration-300">
                             <img src={YouTube} alt="YouTube" />
                         </a>
-                        <a href="" target="_blank" rel="noopener noreferrer" className="text-white  hover:text-red-text pl-2.5">
+                        <a href="https://www.facebook.com/optimumhockeyacademy" target="_blank" rel="noopener noreferrer" className="text-white  hover:text-red-text pl-2.5 hover:scale-110 transition-transform duration-300">
                             <img src={FaceBook} alt="FaceBook" />
                         </a>
                     </div>
 
-                    <div className="flex justify-end pt-6 ">
-                        <div className="flex flex-col text-[24px] font-bold leading-[1.2] text-white w-full md:w-3/4 lg:w-2/4">
+                    <div className="flex justify-end pt-[25px] text-center ">
+                        <div className="flex flex-col text-[24px] font-bold leading-[1.2] text-white w-full md:w-3/4 lg:w-3/4 pr-[132px]">
                             <div className="text-white text-[24px] font-bold leading-[1.2]">OPTIMUM HOCKEY ACADEMY</div>
-                            <div className="text-[64px] text-red-text font-bold ml-[-70px] leading-[1.2]" style={{ WebkitTextStrokeWidth: "1px", WebkitTextStrokeColor: "#907E7E" }}>
+                            <div className="text-[64px] text-red-text font-bold  leading-[1.2]" style={{ WebkitTextStrokeWidth: "1px", WebkitTextStrokeColor: "#907E7E" }}>
                                 Notable Alumni
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-col gap-10 pt-8 ml-[204px] mr-[37px] ">
+                    <div className="flex flex-col gap-10 pt-8 ml-[204px] mr-[37px] 3xl:mx-[20%]">
                         <div className="flex gap-5">
                             <div className="flex ">
-                                <img src={TannerHenricks} alt="" className="object-cover flex-shrink-0 max-w-[120px] max-h-[140px] " />
+                                <a href="https://www.eliteprospects.com/player/351835/tanner-hendricks" target="_blank" >
+                                    <img src={TannerHenricks} alt="" className="object-cover flex-shrink-0 max-w-[120px] max-h-[140px] " />
+                                </a>
                             </div>
-                            <div className="flex flex-row border border-[#737373] bg-[#E8E4E4] gap-6 w-full xl:max-h-[140px] lg:min-h-[140px]  ">
+                            <div className="flex flex-row border border-[#737373] bg-[#E8E4E4] gap-6 w-full   ">
                                 <div className="flex flex-col pt-9 pl-[14px] pb-[43px]">
                                     <div className="text-[32px] text-red-text font-bold leading-[1.2]">Tanner Henricks</div>
                                     <div className="text-black text-[16px] font-normal leading-[1.2]">Defense</div>
@@ -308,9 +312,11 @@ function AluminiBanners() {
                         </div>
                         <div className="flex ">
                             <div className="flex ">
-                                <img src={TyHenricks} alt="" className="max-h-[138px] max-w-[138px]" />
+                                <a href="https://www.eliteprospects.com/player/640302/ty-henricks" target="_blank">
+                                    <img src={TyHenricks} alt="" className="max-h-[138px] max-w-[138px]" />
+                                </a>
                             </div>
-                            <div className="flex flex-row border border-[#737373] bg-[#E8E4E4] gap-[94px] w-full xl:max-h-[186px] lg:min-h-[186px]">
+                            <div className="flex flex-row border border-[#737373] bg-[#E8E4E4] gap-[94px] w-full ">
                                 <div className="flex flex-col pt-9 pl-[14px] pb-[43px] ">
                                     <div className="text-[32px] text-red-text font-bold leading-[1.2]">Ty Henricks</div>
                                     <div className="text-black text-[16px] font-normal leading-[1.2]">Left Wing</div>
@@ -328,11 +334,13 @@ function AluminiBanners() {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex  justify-center gap-3">
+                        <div className="flex  justify-center gap-3 pt-[9px]">
                             <div className="flex ">
-                                <img src={TylerMcGowan} alt="" className="max-w-[124px] max-h-[124px]" />
+                                <a href="https://www.eliteprospects.com/player/750629/tyler-mcgowan" target="_blank">
+                                    <img src={TylerMcGowan} alt="" className="max-w-[124px] max-h-[124px]" />
+                                </a>
                             </div>
-                            <div className="flex flex-row border border-[#737373] bg-[#E8E4E4] gap-9  w-full xl:max-h-[141px] lg:min-h-[141px]">
+                            <div className="flex flex-row border border-[#737373] bg-[#E8E4E4] gap-9  w-full ">
                                 <div className="flex flex-col pt-9 pl-[14px] pb-[43px]">
                                     <div className="text-[32px] text-red-text font-bold leading-[1.2]">Tyler McGowan</div>
                                     <div className="text-black text-[16px] font-normal leading-[1.2]">Defense</div>
@@ -350,11 +358,13 @@ function AluminiBanners() {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex  justify-center gap-3 pb-5">
-                            <div className="flex ">
-                                <img src={CK} alt="" className="max-h-[70px] max-w-[125px] mt-[10px]" />
+                        <div className="flex  justify-center gap-3 pb-[5px] ">
+                            <div className="flex pt-[18px]">
+                                <a href="https://www.eliteprospects.com/player/535652/christian-kim" target="_blank">
+                                    <img src={CK} alt="" className="max-h-[70px] max-w-[125px]" />
+                                </a>
                             </div>
-                            <div className="flex flex-row border border-[#737373] bg-[#E8E4E4] gap-16  w-full xl:max-h-[141px] lg:min-h-[141px]">
+                            <div className="flex flex-row border border-[#737373] bg-[#E8E4E4] gap-16  w-full ">
                                 <div className="flex flex-col pt-9 pl-[14px] pb-[43px]">
                                     <div className="text-[32px] text-red-text font-bold leading-[1.2]">Christian Kim</div>
                                     <div className="text-black text-[16px] font-normal leading-[1.2]">Forward</div>

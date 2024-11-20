@@ -35,8 +35,8 @@ const Layout: React.FC<LayoutProps> = ({ children, bannerPath, page = PAGE.HOME 
           
         }}
       > */}
-      <NavBar  />
-      <div className='lg:pt-28 sm:pt-28  '>
+      {/* <NavBar  /> */}
+      <div className='lg:pt-[100px] sm:pt-[100px]  '>
         {page === PAGE.HOME && <HomeBanner />}
         {page === PAGE.ABOUT && <AboutBanner />}
         {page === PAGE.Program && <ProgramBanner />}

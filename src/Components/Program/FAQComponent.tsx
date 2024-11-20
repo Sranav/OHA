@@ -4,14 +4,14 @@ import FaqMinus from '../../assets/images/FaqMinus.png';
 import sheduleImage from "../../assets/images/sampleshedule.png";
 
 interface FAQItem {
-    question: string;
-    links: { 
-      name: string; 
-      subLinks?: string[]; 
-      subContent?: string[]; 
-      time?: string; 
-    }[];
-    time?: string[]; // Optional, for FAQ that need time
+  question: string;
+  links: { 
+    name: string; 
+    subLinks?: string[]; 
+    subContent?: string[]; 
+    time?: string; 
+  }[];
+  time?: string[]; // Optional, for FAQ that need time
 }
 
 const FAQComponent: React.FC = () => {
@@ -85,13 +85,13 @@ const FAQComponent: React.FC = () => {
                 className="w-full py-6 text-left flex items-center justify-between"
                 onClick={() => toggle(index)}
               >
-                <span className="text-[24px] leading-[1.2] text-gray-text font-normal pl-8">
-                  {faq.question === "Sample Schedule" ? "SAMPLE SCHOOL SCHEDULE" : faq.question}
+                <span className="text-[24px] leading-[1.2] text-black font-normal pl-5">
+                  {faq.question}
                 </span>
                 <img
                   src={selected === index ? FaqMinus : FaqIcon}
                   alt="Faq Icon"
-                  className="lg:w-8 lg:h-8 xs:w-6 xs:h-6 mr-5"
+                  className="lg:w-8 lg:h-8 xs:w-6 xs:h-6 mr-[18px]"
                 />
               </button>
               <div
@@ -105,7 +105,7 @@ const FAQComponent: React.FC = () => {
                     <div>
                       {/* Subheading with black background */}
                       <div className="bg-[#545454] text-white py-4 text-center">
-                        <div className="text-[24px] font-normal leading-[1.2]">SAMPLE SCHOOL SCHEDULE</div>
+                        <div className="text-[24px] font-normal leading-[1.2] uppercase">Sample School Schedule</div>
                       </div>
 
                       {/* Background image and content */}

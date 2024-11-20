@@ -32,8 +32,8 @@ function InstaLivePhoto() {
 
   return (
     
-    <div className="p-6 lg:mx-[80px] md:mx-[30px] mx-auto h-auto">
-      <div className="flex justify-center items-center h-full flex-wrap gap-[22px]">
+    <div className="py-[18px] lg:mx-[80px] md:mx-[30px] mx-auto h-auto">
+      <div className="flex md:flex-row xs:flex-col justify-center items-center h-full flex-wrap gap-[22px]">
         {media.length > 0 ? (
           media.map((item, index) => (
             <div key={index} className="flex items-center flex-col">

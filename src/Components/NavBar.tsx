@@ -4,20 +4,20 @@ export const NavBar = () => {
   return (
     <>
       {/* Top Div with White Background */}
-      <div className='flex justify-between bg-white fixed w-full start-0 top-0 h-20  z-50'>
-        <Link to='/'>
-          <img src={OHALogo} alt="" className="py-6 pl-4" />
+      <div className='flex justify-between bg-white fixed w-full start-0 top-0 z-20 '>
+        <Link to='/' className="3xl:ml-[20%]">
+          <img src={OHALogo} alt="" className="pt-[21px] md:pl-[50px] xs:pl-[10px] 3xl:pl-0" />
         </Link>
-        <div className="py-6 md:pr-11 xs:pr-6 mb-1">
-          <button className="bg-red-text w-full text-center lg:text-[18px] xs:text-[10px] text-white py-1 px-2">Contact Us</button>
+        <div className="py-5 md:pr-10 xs:pr-[10px] mb-1 3xl:mr-[20%]">
+          <button className="bg-red-text w-full text-center lg:text-[20px] xs:text-[10px] text-white py-1 px-2 leading-[1.2] hover:bg-hover-text hover:text-black"><Link to="/contact">Contact Us</Link></button>
         </div>
       </div>
 
       {/* Navbar */}
-      <nav className="bg-black fixed w-full z-20 top-[80px] start-0 border-b border-gray-600">
-        <div className="flex items-center justify-end mx-auto p-1 md:pr-11 xs:pr-3">
+      <nav className="bg-black fixed w-full z-20 top-[60px] start-0 border-b border-gray-600">
+        <div className="flex items-center md:justify-end xs:justify-center mx-auto p-[5px] md:pr-11 xs:pr-3 3xl:mr-[20%]">
           {/* Nav Links */}
-          <ul className="flex flex-row md:gap-12 xs:gap-6  font-medium">
+          <ul className="flex flex-row lg:gap-[50px] xs:gap-6  font-medium">
             <li>
               <Link
                 to="/about"
